@@ -212,6 +212,7 @@ button {
     rgba(46, 47, 66, 0.7)),
     url(../images/webstudio/mobile/background\ mobile\ 2x.jpg);
     width: 100%;
+    max-width: 428px;
     background-size: cover;
   }
 }
@@ -338,6 +339,12 @@ button {
   }
 /* //Modal-Window */
 }
+
+@media screen and (max-width: 427px){
+.modal {
+    width: 310px;
+    height: auto;}
+  }
 
 @media screen and (max-width: 427px){
   
