@@ -71,9 +71,9 @@ button {
 }
 .mobile-menu {
   position: fixed;
-  width: 100%;
-  
-  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -95,7 +95,7 @@ button {
   justify-content: space-between;
   height: 100%;
   min-width: 320px;
-  max-width: 437px;
+  max-width: 428px;
   position: relative;
   padding-top: 40px;
   padding-bottom: 48px;
@@ -153,7 +153,7 @@ button {
 }
 .mobile-links-tel {
   display: inline-block;
-  width: 337px;
+  width: max-content;
   font-family: "Roboto";
   font-weight: 600;
   font-size: 36px;
