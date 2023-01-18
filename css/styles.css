@@ -412,14 +412,17 @@ letter-spacing: 0.02em;
     margin-right: auto;
     align-items: center;
   } */
-  @media screen  and(max-width:1199px) {
+  @media screen  and (max-width:1199px) {
     .list-of-benefits{
       display: none;
     }
+    .section-doing{
+      display: none;
+    }
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) and (max-width:1199px){
   .container {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   width: 768px;
   margin-left: auto;
@@ -767,7 +770,7 @@ color: var(--secondary-color);
   content: "";
   position: absolute;
   display: block;
-  bottom: 1px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
