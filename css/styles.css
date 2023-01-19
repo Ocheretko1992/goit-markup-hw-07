@@ -413,6 +413,15 @@ color: var(--paragraph-color);
   text-align: center;
   gap: 72px;
 }
+.social-list {
+  column-gap: 16px;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 72px;
+}
 }
 @media screen and (max-width: 427px){
 .modal {
@@ -764,6 +773,13 @@ color: var(--secondary-color);
   width: 64px;
   height: 64px;
 }
+.social-list {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 /* /Tablet */
 
@@ -1056,6 +1072,12 @@ color: var(--secondary-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 }
 /* /Desktop */
@@ -1415,12 +1437,6 @@ color: var(--secondary-color);
 .customers-company {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }
 .customers {
   margin-bottom: 72px;
