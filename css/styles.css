@@ -37,6 +37,9 @@ img {
 button {
   cursor: pointer;
 }
+picture{
+ width: 264px;
+}
 /* //reset styles */
 
 /* Mobile */
