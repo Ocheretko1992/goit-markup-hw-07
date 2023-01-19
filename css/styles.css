@@ -45,22 +45,42 @@ picture{
 /* Mobile */
 
 @media screen and (min-width: 480px){
-  .container {
-    width: 428px;
+.container {
+    width: 426px;
     margin-left: auto;
+    margin-right: auto;
+}
+}
+.mobile-link-icon:not(:last-child){
+    margin-right: 56px;
+}
+@media screen and (max-width: 427px){
+  .mobile-link-icon:not(:last-child) {
     margin-right: auto;
   }
 }
 @media screen and (max-width: 767px) {
   .container {
     display: flex;
-    max-width: 428px;
-    justify-content:space-between;
-    padding: 0 17px;
+    justify-content: space-between;
+    padding: 0 16px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
   } 
+  .container-div {
+  max-width: 428px;
+  justify-content:space-between;
+  padding: 0 17px;
+  margin-left: auto;
+  margin-right: auto; 
+  } 
+  .hero-sectoin {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
   .menu-mobile {
     display: none;
   }
@@ -105,6 +125,7 @@ picture{
   flex-direction: column;
   height: 100%;
   width: 100%;
+  max-width: 428px;
   position: relative;
   padding-top: 80px;
   padding-bottom: 48px;
@@ -188,10 +209,8 @@ picture{
   letter-spacing: 0.02em;
   color: #434455;
 }
-.mobile-link {
+.mobile-link{
   display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 .pages-mobile-icon {
   width: 40px;
@@ -204,29 +223,22 @@ picture{
 }
 /* HERO */
 .hero-sectoin {
-  padding-top: 112px;
-  padding-bottom: 240px;
-  width: 428px;
-  margin: 0 auto;
   background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
     url(../images/webstudio/mobile/backgraund\ mobile\ 1x.jpg);
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero-sectoin {
-    margin: auto;
     background-image:linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
     url(../images/webstudio/mobile/background\ mobile\ 2x.jpg);
     width: 100%;
-    max-width: 428px;
-    height: 432px;
-    background-size: cover;
   }
 }
 .conteiner-hero {
@@ -339,24 +351,29 @@ picture{
   color: var(--brand-color);
 }
 .title-list {
-  font-family: 'Roboto';
+font-family: 'Roboto';
 text-align: center;
 margin-bottom: 8px;
-font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--secondary-color);
+}
+.title-list-extra{
+font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-  color: var(--secondary-color);
 }
 .paragraf-text {
-  font-size: 16px;
-  max-width: 428px;
-  width: 100%;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-  color: var(--paragraph-color);
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--paragraph-color);
 }
 .menu-paragraf{
   display: flex;
@@ -385,6 +402,15 @@ letter-spacing: 0.02em;
     padding-bottom: 96px;
   }
 /* //Modal-Window */
+.team-item {
+  margin-bottom: 72px;
+  display: inline-block;
+  list-style: none;
+}
+.team {
+  text-align: center;
+  gap: 72px;
+}
 }
 @media screen and (max-width: 427px){
 .modal {
@@ -397,6 +423,11 @@ letter-spacing: 0.02em;
   .mobile-links-tel{
     font-size: 20px;
   }
+
+.team-item {
+  display: inline-block;
+  background-color: var(--brand-color);
+}
 }
 
 /* //HERO */
@@ -422,7 +453,7 @@ letter-spacing: 0.02em;
       display: none;
     }
   }
-  @media screen and (min-width: 768px) and (max-width:1199px){
+  @media screen and (min-width: 767px) and (max-width:1199px){
   .container {
   display: flex;
   justify-content: space-between;
@@ -430,6 +461,7 @@ letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
   }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
   .mobile-menu-open{
@@ -444,13 +476,14 @@ letter-spacing: 0.02em;
   .container-mobile-menu{
     display: none;
   }
+.team-item {
+  background-color: var(--brand-color);
+}
   .nav-pages{
     display: flex;
     align-items: center;
     justify-content: space-between
-    
   }
-
   .menu-mobile{
     display: flex;
     column-gap: 40px;
@@ -699,6 +732,15 @@ color: var(--secondary-color);
   column-gap: 24px;
   row-gap: 72px;
 }
+.team-list {
+  list-style: none;
+  display: flex;
+  column-gap: 24px;
+}
+.team {
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .list-of-benefits {
   display: none;
@@ -707,18 +749,29 @@ color: var(--secondary-color);
   width: 64px;
   height: 64px;
 }
+}
 /* /Tablet */
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
-    
     margin-left: auto;
     margin-right: auto;
   }
   .top-web-studio {
   margin-right: 76px;
+}
+.team-list {
+  flex-basis: calc((100%-72px) / 4);
+}
+.team-list {
+  list-style: none;
+}
+.team {
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .menu-link {
   display: block;
@@ -975,7 +1028,20 @@ color: var(--secondary-color);
   width: 64px;
   height: 64px;
 }
-
+.team-list {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+}
+.team-item {
+  background-color: var(--brand-color);
+}
+.team-item {
+  background: var(--brand-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 }
 /* /Desktop */
 
@@ -1293,11 +1359,6 @@ color: var(--secondary-color);
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.team-list {
-  display: flex;
-  column-gap: 24px;
-}
-
 .section-doing {
   padding-bottom: 120px;
   padding-top: 120px;
@@ -1307,22 +1368,8 @@ color: var(--secondary-color);
   text-align: center;
 }
 /* TEAM OUR */
-.team {
-  text-align: center;
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
 .letter-h2 {
   margin-bottom: 72px;
-}
-.team-list {
-  flex-basis: calc((100%-72px) / 4);
-}
-.team-item {
-  background: var(--brand-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 .social-list {
   display: flex;
@@ -1497,12 +1544,6 @@ color: var(--secondary-color);
 .menu-link-webstudio:hover,
 .menu-link-webstudio:focus {
   color: var(--interactive-color);
-}
-.team-list {
-  list-style: none;
-}
-.team-item {
-  background-color: var(--brand-color);
 }
 /* <!--Site header--> */
 header {
