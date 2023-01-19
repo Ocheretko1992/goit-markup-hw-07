@@ -728,15 +728,14 @@ color: var(--interactive-color);
 .title-list {
 margin-bottom: 8px;
 font-family: 'Roboto';
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--secondary-color);
 }
 .paragraf-text {
   max-width: 356px;
-  height: 72px;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
