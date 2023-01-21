@@ -72,7 +72,8 @@ picture{
   justify-content:space-between;
   padding: 0 17px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
+  padding-bottom: 96px; 
   } 
   .hero-sectoin {
   padding-top: 112px;
@@ -361,6 +362,8 @@ letter-spacing: 0.02em;
 color: var(--secondary-color);
 }
 .title-list-extra{
+  margin-bottom: 8px;
+  text-align: center;
 font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
@@ -601,7 +604,6 @@ margin: 0 auto;
 /* Customers */
 .customers-company {
   padding-top: 96px;
-  padding-bottom: 96px;
 }
 .customers {
   margin-bottom: 72px;
@@ -813,14 +815,15 @@ color: var(--interactive-color);
 }
 /* HERO */
 .hero-sectoin {
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 111px;
+  padding-bottom: 108px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/webstudio/tablet/backgraund\ tablet\ 1x.jpg);
   background-size: cover;
   max-width: 1199px;
+  height: 436px;
   margin: 0 auto;
 }
 .conteiner-hero {
@@ -951,14 +954,21 @@ color: var(--interactive-color);
   justify-content: space-between;
   column-gap: 40px;
 }
-.title-list {
-margin-bottom: 8px;
+.title-list-extra{
 font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
-line-height: 1.11;
+line-height: 1.1;
 letter-spacing: 0.02em;
-text-transform: capitalize;
+margin-bottom: 8px;
+}
+.title-list {
+margin-bottom: 8px;
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
 color: var(--secondary-color);
 }
 .paragraf-text {
@@ -1693,6 +1703,14 @@ color: var(--secondary-color);
 }
 /* /Customers */
 /* //FOOTER */
+.title-list-extra{
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+margin-bottom: 8px;
+}
 }
 /* /Desktop */
 
@@ -1969,8 +1987,10 @@ color: var(--secondary-color);
   background-color: #404bbf;
 }
 .footer-cards {
+  background: #FFFFFF;
   padding-top: 32px;
   padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
 }
 /* /TEAM OUR */
 
