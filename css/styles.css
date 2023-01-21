@@ -636,6 +636,10 @@ margin: 0 auto;
   gap: 72px;
   align-items: center;
 }
+.team {
+  padding-top: 96px;
+  background: #f4f4fd;
+}
 }
 @media screen and (max-width: 427px){
 .modal {
@@ -652,10 +656,6 @@ margin: 0 auto;
 .team-item {
   display: inline-block;
   background-color: var(--brand-color);
-}
-.team {
-  padding-top: 96px;
-  background: #f4f4fd;
 }
 }
 
