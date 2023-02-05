@@ -136,8 +136,8 @@ picture{
 .mobile-close-btn {
   background-color: transparent;
   position: absolute;
-  top: 25px;
-  right: 15px;
+  top: 40px;
+  right:40px;
   padding: 0;
   line-height: 0;
   background: #E7E9FC;
@@ -685,6 +685,9 @@ margin: 0 auto;
   display: inline-block;
   background-color: var(--brand-color);
 }
+.mobile-color{
+  color: #404BBF;
+}
 }
 
 /* //HERO */
@@ -695,7 +698,7 @@ margin: 0 auto;
 
   @media screen and (min-width: 480px){
 .container-div {
-    width: 678px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
 }
